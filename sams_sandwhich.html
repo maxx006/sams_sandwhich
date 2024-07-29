@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h2>Select your Bread size</h2>
+<label><input type="radio" data-price="4.99" name="bread_length" value="6inch" class="radioOption">6 Inch</label> 
+<label><input type="radio" data-price="4.99" name="bread_length" value="12inch" class="radioOption">12 Inch</label>
+	<h2>Select your Salads</h2>
+<label><input type="checkbox" data-price="4.99" name="Lettuce" value="6inch" class="radioOption">Lettuce</label>
+<label><input type="checkbox" data-price="4.99" name="Tomatoes" value="6inch" class="radioOption">Tomatoes</label>
+<label><input type="checkbox" data-price="4.99" name="Carrot" value="6inch" class="radioOption">Carrot</label>
+<label><input type="checkbox" data-price="4.99" name="Cucumber" value="6inch" class="radioOption">Cucumber</label>
+<label><input type="checkbox" data-price="4.99" name="Capsicum" value="6inch" class="radioOption">Capsicum</label>
+	<h2>Select your Cheese</h2>
+<label><input type="radio" data-price="4.99" name="Cheese_type" value="Swiss" class="radioOption">Swiss</label>
+<label><input type="radio" data-price="4.99" name="Cheese_type" value="Cheddar" class="radioOption">Cheddar</label>
+<label><input type="radio" data-price="4.99" name="Cheese_type" value="Feta" class="radioOption">Feta</label>
+<label><input type="radio" data-price="4.99" name="Cheese_type" value="No Cheese" class="radioOption">No Cheese</label>
+	<h2>Select your Meat</h2>
+<label><input type="radio" data-price="4.99" name="Meat_type" value="Ham" class="radioOption">Ham</label>
+<label><input type="radio" data-price="4.99" name="Meat_type" value="Tuna" class="radioOption">Tuna</label>
+<label><input type="radio" data-price="4.99" name="Meat_type" value="Turkey" class="radioOption">Turkey</label>
+<label><input type="radio" data-price="4.99" name="Meat_type" value="Salami" class="radioOption">Salami</label>
+<label><input type="radio" data-price="4.99" name="Meat_type" value="Meat Ball" class="radioOption">Meat Ball</label>
+<label><input type="radio" data-price="4.99" name="Meat_type" value="Chicken" class="radioOption">Chicken</label>
+	<h2>Select your Bread</h2>
+<label><input type="radio" data-price="4.99" name="Bread_type" value="White" class="radioOption">White</label>
+<label><input type="radio" data-price="4.99" name="Bread_type" value="Whole Grain" class="radioOption">Whole Grain</label>
+<label><input type="radio" data-price="4.99" name="Bread_type" value="Italian" class="radioOption">Italian</label>
+<label><input type="radio" data-price="4.99" name="Bread_type" value="Rye" class="radioOption">Rye</label>
+<label><input type="radio" data-price="4.99" name="Bread_type" value="Wrap" class="radioOption">Wrap</label>
+
+	
+	
+<label>First name: <input autocomplete="given-name" id="firstNameInput" pattern="[A-Za-z\-']{2,10}" placeholder="John" required="" title="Please enter in your first name" type="text"></label>
+        <div id="errorMessage1" class="errorMessages"></div>
+
+<label>Last name: <input autocomplete="family-name" id="lastNameInput" pattern="[A-Za-z\-']{2,10}" placeholder="Smith" required="" title="Please enter in your last name" type="text"></label>
+        <div id="errorMessage2" class="errorMessages"></div>
+	
+<label>Cellphone :</label><input autocomplete="on" id="cellPhoneInput" placeholder="0274822556" required="" title="Enter cellphone address" type="text">
+	
+<label>Pick up time :</label><input autocomplete="on" id="timeInput" placeholder="0274822556" required="" title="Enter your pick up time" type="text">
+
+<label>Do you agree to our terms and conditions?</label><input id="termsAndConditions" type="checkbox">	
+
+<button id="submitButton" onClick="checkForm()">Calculate Cost</button>
+
+		
+<h2>Order Summary:</h2>
+<div id="outputDIV"></div><br>
+<div id="outputCustomerDetails"></div>
+	
+	
+<!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+	
+<script src="airtable.browser.js"></script>
+<script src="sams_sandwhich.js"></script>
+</body>
+</html>
